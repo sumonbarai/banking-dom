@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap');
+
+/* login area */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: auto;
+}
+
+body {
+    background-color: #f7f1e3;
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+input:focus{
+    outline: none;
+}
+.login-section {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#section-area h1,
+.balance-area h1 {
+    color: #9980FA;
+    text-align: center;
+    margin: 30px;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+#section-area h1 span,
+.balance-area h1 span {
+    color: #F79F1F;
+}
+
+.login-area {
+    max-width: 500px;
+    margin: auto;
+}
+
+.login-area input,
+.login-area button {
+    width: 100%;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    border: 2px solid #F79F1F;
+}
+
+.login-area input:focus {
+    outline: none;
+    border: 2px solid #9980FA;
+}
+
+.login-area button {
+    background-color: #F79F1F;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.login-area button:hover {
+    background-color: #9980FA;
+    border: 2px solid #9980FA;
+}
+
+.error-message {
+    color: red;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+/* account html  */
+.section-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.section-grid .grid-item {
+    text-align: center;
+    color: #fff;
+    font-size: 36px;
+    text-transform: capitalize;
+    padding: 50px 20px;
+    border-radius: 30px;
+}
+
+.doposit-item {
+    background-color: #9980FA;
+}
+
+.witdrew-item {
+    background-color: #34ace0;
+}
+
+.total-balance-item {
+    background-color: #33d9b2;
+}
+
+/* input update */
+.update-area {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    margin: 20px 0;
+
+}
+
+.update-area .left-area,
+.update-area .right-area  {
+    background-color: #F79F1F;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.update-area h6 {
+    font-size: 25px;
+}
+
+.update-area input,
+.update-area button  {
+    width: 70%;
+    margin: 0 auto;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    margin: 5px;
+    font-size: 18px;
+
+}
+.update-area button {
+    color: #fff;
+    font-size: 20px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.update-area .left-area{
+    background-color: #F79F1F;
+}
+.update-area .right-area{
+    background-color: #34ace0;
+}
+.update-area .left-area button {
+    background-color: #9980FA;
+}
+.update-area .right-area button {
+    background-color: #33d9b2;
+}

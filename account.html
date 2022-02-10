@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank balance details</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main>
+        <section class="balance-area">
+            <div class="container">
+                <h1>Your account balance <span>statement.</span></h1>
+                <div class="section-grid">
+                    <div class="grid-item doposit-item">
+                        <h3>deposit</h3>
+                        <p>&#2547; <span id="diposit-balance">00</span></p>
+                    </div>
+                    <div class="grid-item witdrew-item">
+                        <h3>Withdrew</h3>
+                        <p>&#2547; <span id="withdrew-balance">00</span></p>
+                    </div>
+                    <div class="grid-item total-balance-item">
+                        <h3>Total Balance</h3>
+                        <p>&#2547; <span id="total-balance">1000</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="update-section-area">
+            <div class="container">
+                <div class="update-area">
+                    <div class="left-area">
+                        <h6>deposit</h6>
+                        <input type="text" id="input-deposit">
+                        <button type="button" id="deposit-btn">deposit</button>
+                    </div>
+                    <div class="right-area">
+                        <h6>withdrew</h6>
+                        <input type="text" id="input-withdrew">
+                        <button type="button" id="withdrew-btn">withdrew</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <script src="js/account.js"></script>
+</body>
+
+</html>
