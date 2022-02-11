@@ -1,15 +1,16 @@
-// login area script
-const userEmail = document.getElementById("user-email");
-const userPassword = document.getElementById("user-password");
-const loginBtn = document.getElementById("login-btn");
-const errorMessage = document.getElementById("error-message");
-loginBtn.addEventListener("click",function(){
-    if(userEmail.value == "abc@gmail.com" && userPassword.value ==123456) {
-        window.location.href = "account.html";
-    }else {
-        userEmail.value = "";
-        userPassword.value= "";
-        errorMessage.innerText="your email and password does not match";
+// user login function code
+function login(email, password) {
+    if (email == "abc@gmail.com" && password == "123456") {
+        window.location.href = "account.html"
+    } else {
+        const errorMessage = document.getElementById("error-message");
+        errorMessage.innerText = "please give correct email and password";
     }
-});
+}
 
+const loginBtn = document.getElementById("login-btn");
+loginBtn.addEventListener("click", function() {
+    const email = document.getElementById("user-email").value;
+    const password = document.getElementById("user-password").value;
+    login(email, password);
+});
